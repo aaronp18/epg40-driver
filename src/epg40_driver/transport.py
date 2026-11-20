@@ -20,6 +20,12 @@ class ITransport(ABC):
     def close(self) -> None:
         "Close the connection"
 
+    @abstractmethod
+    def writeRegister(self, register: int, value: int) -> None:
+        "Write a value to a register"
+
+    # TODO
+
 
 class SerialTransport(ITransport):
     def __init__(

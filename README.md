@@ -10,4 +10,6 @@ WRITE UP TODO
 
 Gripper is modbus RTU. But would be good to be able to control with modbus TCP as well. I think they both work simialry.
 
+the EPG manual describes registers as 16-bit words containing two separate 8-bit parameters, so need to pack.
+
 ## Installation

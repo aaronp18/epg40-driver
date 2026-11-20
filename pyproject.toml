@@ -1,0 +1,19 @@
+[project]
+name = "epg40-driver"
+version = "0.1.0"
+description = "Python Driver for the EPG40 Jodell Electric Gripper"
+readme = "README.md"
+authors = [
+    { name = "Aaron", email = "hourglassprograms@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pymodbus>=3.16.2",
+]
+
+[project.scripts]
+epg40-driver = "epg40_driver:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
